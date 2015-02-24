@@ -1,6 +1,6 @@
 studentRoster.factory('StudentsFactory', function StudentsFactory() {
   var factory = {};
-  factory.students = [];
+  factory.students = [{ name: "Frank", permissionSlip: false }];
 
   factory.addStudent = function() {
     var student = { name: factory.studentName, permissionSlip: false };
