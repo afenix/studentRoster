@@ -14,8 +14,6 @@
     <div class ="container">
 
       <div ng-controller="StudentsCtrl">
-        {{StudentsFactory}}
-        {{students}}
 
         <div class="row" ng-show="students.length">
           <div class="col-md-12">
@@ -65,7 +63,7 @@
       <div class="row" ng-controller="FieldTripsCtrl">
 
         <div class="col-md-6" ng-show="studentsWithoutPermission.length">
-          <h2>Without Permission Slips</h2>
+          <h3>Without Permission Slips</h3>
           <ul>
             <li ng-repeat="item in studentsWithoutPermission = (students | filter:{permissionSlip: false})">
               {{item.name}} <a ng-click="addStudentWithPermissionSlip(item)"> - received permission slip - </a>
